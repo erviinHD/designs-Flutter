@@ -8,8 +8,8 @@ class PageTitle extends StatelessWidget {
     return SafeArea(
       bottom: false,
       child: Container(
-        margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 25),
-        width: 250,
+        margin: const EdgeInsets.symmetric(vertical: 25),
+        width: 350,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: const [

@@ -1,5 +1,6 @@
 import 'package:fl_disenios/widgets/backgroud.dart';
 import 'package:fl_disenios/widgets/bottom_navigation.dart';
+import 'package:fl_disenios/widgets/card_table.dart';
 import 'package:fl_disenios/widgets/page_title.dart';
 import 'package:flutter/material.dart';
 
@@ -27,8 +28,13 @@ class _HomeBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
+      physics: const BouncingScrollPhysics(),
       child: Column(
-        children: [PageTitle()],
+        children: [
+          const PageTitle(),
+          //Card Table
+          CardTable()
+        ],
       ),
     );
   }
