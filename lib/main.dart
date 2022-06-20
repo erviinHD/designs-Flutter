@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Material App',
       debugShowCheckedModeBanner: false,
+      theme: ThemeData.dark(),
       initialRoute: 'home_design',
       routes: {
         'basic_design': (_) => const BasicDesignScreen(),
